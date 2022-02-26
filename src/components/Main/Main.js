@@ -1,3 +1,4 @@
+import "./module.css";
 export default function Main() {
   return (
     <main>
@@ -11,7 +12,7 @@ export default function Main() {
         <div className="range">
           <input type="range" className="main--actions__range" />
         </div>
-        <div className="">
+        <div className="range--footer">
           <p>Monthly Billing</p>
           <input type="checkbox" className="main--actions__checkbox" />
           <p>Yearly Billing</p>
