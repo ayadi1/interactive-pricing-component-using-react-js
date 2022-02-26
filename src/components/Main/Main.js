@@ -1,4 +1,5 @@
 import "./main.css";
+import listImage from "../../images/icon-check.svg";
 export default function Main() {
   return (
     <main>
@@ -10,7 +11,7 @@ export default function Main() {
       </div>
       <div className="main--actions">
         <div className="range">
-          <input type="range" className="main--actions__range" />
+          <input type="range" id="switch" className="main--actions__range" />
         </div>
         <div className="range--footer">
           <p>Monthly Billing</p>
@@ -20,7 +21,7 @@ export default function Main() {
         </div>
       </div>
       <div className="main--footer">
-        <ul>
+        <ul style={{ listStyleImage: `url(${listImage})` }}>
           <li>Unlimited websites</li>
           <li>100% data ownership</li>
           <li>Email reports</li>

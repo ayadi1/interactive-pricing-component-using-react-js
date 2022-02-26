@@ -1,8 +1,22 @@
+main {
+  background-color: #fff;
+  margin-top: 100px;
+  width: 400px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+}
 .main--header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .main--header p {
 }
 .main--header p span {
+  font-weight: 800;
+  color: var(--Dark-Desaturated-Blue-Text-CTA-Background);
+  font-size: 35px;
 }
 .main--actions {
 }
@@ -13,16 +27,38 @@
 .main--actions__checkbox {
 }
 .range--footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 15px;
 }
 .range--footer p {
 }
 .main--actions__discount {
+  color: var(--Light-Red-Discount-Text) !important;
+  background-color: var(--Light-Grayish-Red-Discount-Background);
+  border-radius: 100px;
+  width: 108px;
+  text-align: center;
 }
 .main--footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
 }
 .main--footer ul {
 }
 .main--footer ul li {
+  color: var(--Grayish-Blue-Text);
 }
 .main--footer button {
+  border: none;
+  background-color: var(--Dark-Desaturated-Blue-Text-CTA-Background);
+  color: #fff;
+  width: 104px;
+  height: 30px;
+  border-radius: 100px;
+  cursor: pointer;
 }
+
