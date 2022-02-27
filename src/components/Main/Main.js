@@ -17,7 +17,7 @@ export default function Main() {
           <p>Monthly Billing</p>
           <input type="checkbox" className="main--actions__checkbox" />
           <p>Yearly Billing</p>
-          <p className="main--actions__discount">25% discount</p>
+          <p className="main--actions__discount">-25%</p>
         </div>
       </div>
       <div className="main--footer">

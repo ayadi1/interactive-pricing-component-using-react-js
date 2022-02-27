@@ -1,6 +1,6 @@
 main {
   background-color: #fff;
-  margin-top: 100px;
+  margin-top: 50px;
   width: 400px;
   padding: 20px;
   border-radius: 5px;
@@ -11,54 +11,184 @@ main {
   justify-content: space-between;
   align-items: center;
 }
-.main--header p {
-}
+
 .main--header p span {
   font-weight: 800;
   color: var(--Dark-Desaturated-Blue-Text-CTA-Background);
   font-size: 35px;
 }
-.main--actions {
-}
-.main--actions .range {
-}
-.main--actions .range .main--actions__range {
-}
-.main--actions__checkbox {
-}
+
 .range--footer {
   display: flex;
   justify-content: flex-end;
   gap: 10px;
   margin-top: 15px;
 }
-.range--footer p {
-}
+
 .main--actions__discount {
   color: var(--Light-Red-Discount-Text) !important;
   background-color: var(--Light-Grayish-Red-Discount-Background);
   border-radius: 100px;
-  width: 108px;
-  text-align: center;
+  width: 60px;
 }
 .main--footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 50px;
+  gap: 40px;
 }
-.main--footer ul {
-}
+
 .main--footer ul li {
   color: var(--Grayish-Blue-Text);
 }
 .main--footer button {
   border: none;
   background-color: var(--Dark-Desaturated-Blue-Text-CTA-Background);
-  color: #fff;
-  width: 104px;
-  height: 30px;
+  width: 140px;
+  height: 40px;
   border-radius: 100px;
   cursor: pointer;
+  color: var(--Pale-Blue-CTA-Text);
 }
 
+/* range style start */
+.main--actions__range {
+  -webkit-appearance: none;
+  width: 100%;
+  background: transparent;
+}
+
+.main--actions__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+
+.main--actions__range:focus {
+  outline: none;
+}
+
+.main--actions__range::-ms-track {
+  width: 100%;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+/* range style start */
+.range {
+  margin: 20px 0;
+}
+.main--actions__range {
+  width: 100%;
+}
+/* range style end */
+/*! Track style start */
+/* Firefox style start */
+.main--actions__range::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+}
+.main--actions__range::-moz-range-progress {
+  background-color: var(--Soft-Cyan-Full-Slider-Bar);
+}
+/* Firefox style end */
+/* style Internet Explorer start */
+
+.main--actions__range::-ms-fill-lower {
+  background: hsl(174, 77%, 80%);
+}
+
+.main--actions__range::-ms-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+}
+
+/* style Internet Explorer end */
+/* chrome style start */
+
+.main--actions__range {
+  -webkit-appearance: none;
+}
+.main--actions__range::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 8.4px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+}
+
+.main--actions__range::-webkit-slider-runnable-track {
+  background-color: var(--Soft-Cyan-Full-Slider-Bar);
+}
+/* chrome style end */
+
+/*! Track style end */
+
+/*! Thumb style start */
+.main--actions__range::-moz-range-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--Strong-Cyan-Slider-Backround);
+  cursor: pointer;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main--actions__range::-moz-range-thumb:hover {
+  box-shadow: 3px 3px 10px 5px hsla(174, 100%, 50%, 0.466);
+}
+.main--actions__range::-webkit-slider-thumb:hover {
+  box-shadow: 3px 3px 10px 5px hsla(174, 100%, 50%, 0.466);
+}
+.main--actions__range::-ms-thumb:hover {
+  box-shadow: 3px 3px 10px 5px hsla(174, 100%, 50%, 0.466);
+}
+.main--actions__range::-ms-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--Strong-Cyan-Slider-Backround);
+  cursor: pointer;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.main--actions__range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #000000;
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(174, 86%, 45%);
+  cursor: pointer;
+  margin-top: -14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+/*! Thumb style end */
+/* media screen style start */
+@media screen and (max-width: 450px) {
+  main {
+    max-width: 365px;
+  }
+  .main--footer {
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+}
+/* media screen style end */
