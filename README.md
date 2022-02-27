@@ -1,5 +1,5 @@
 # Frontend Mentor - Interactive pricing component
-
+## live preview link https://interactive-pricing-component-using-react-js.netlify.app/
 ![Design preview for the Interactive pricing component coding challenge](./design/desktop-preview.jpg)
 
 ## Getting Started with Create React App
